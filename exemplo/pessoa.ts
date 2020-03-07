@@ -1,17 +1,22 @@
-namespace empresa{
+namespace hospital{
     export class Pessoa{
         //informações da classe
         private nome:string;
         private cpf:string;
-        private idade:number|undefined;
+        
 
         constructor(nome:string, cpf:string){
             this.cpf = cpf;
             this.nome = nome;
         }
 
+
         getCpf():string{
             return this.cpf;
+        }
+
+        setCpf(cpf:string):void{
+            this.cpf = cpf;
         }
 
         //mostra o valor
@@ -19,20 +24,10 @@ namespace empresa{
             return this.nome;
         }
 
-        //altera o valor
         setNome(nome:string):void{
-            this.nome = nome;
-        }
+        this.nome = nome;}
         
-        getIdade():number|undefined{
-            return this.idade;
-        }
-
-        //altera o valor
-        setIdade(idade:number):void{
-            this.idade = idade;
-        }
-
-       
     }
+
+    
 }
